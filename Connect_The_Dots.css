@@ -1,0 +1,130 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+
+    margin: 0;
+
+    background-image: url('images/background1.png');
+    background-size: cover;
+    background-position: center;
+
+    font-family: 'Noto Sans', sans-serif;
+}
+
+#classement
+{
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            width: 150px;
+            padding-left: 5px;
+            text-align: left;
+            color:yellow;
+            border-radius: 10px;
+            border: solid yellow 2px;
+
+
+            background-image: url("images/background2.png");
+            background-repeat: no-repeat;
+        
+}
+
+#menu, #instructions, #niveau-suivant, #felicitaion, #formule {
+    text-align: center;
+    color: yellow;
+    font-family: 'Noto Sans', sans-serif;
+    border: 2px solid yellow;
+
+}
+
+#formule label
+{
+  color: yellow;
+  font-family: 'Noto Sans', sans-serif;
+}
+#formule
+{
+  display: none;
+}
+
+#instructions {
+	display: none;
+}
+
+#boite-jeu{
+	display: none;
+}
+
+#niveau-suivant{
+	display: none;
+}
+
+#felicitaion {
+	display: none;
+}
+.menu_du_centre {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url('images/background2.png');
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+    max-width: 80%;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+#boite-jeu {
+    position: relative;
+}
+
+canvas {
+    border: 2px solid yellow;
+    background-color: #000;
+    height:600px;
+}
+
+.boutton-niveau {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.boutton-jeu, .menu_du_centre button {
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: transparent;
+    border: 2px solid yellow;
+    color: yellow;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.boutton-jeu:hover, .center-menu button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.boutton-jeu:active, .center-menu button:active {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+#felicitation {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: yellow;
+    font-size: 32px;
+    font-family: 'Noto Sans', sans-serif;
+}

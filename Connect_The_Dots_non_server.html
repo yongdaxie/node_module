@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connect the Dots</title>
+    <link rel="stylesheet" href="Connect_The_Dots.css">
+</head>
+<body>
+
+   <nav id="classement">
+     <h3>Leaderboard</h3>
+     <ol id="nom"></ol>
+   </nav>
+
+
+    <main id="menu" class="menu_du_centre">
+        <h1>Connect the Dots</h1>
+        <button onclick="lancerJeu()">Jouer</button>
+        <button onclick="afficheInstruction()">Comment jouer?</button>
+    </main>
+
+    <form id="formule" class="menu_du_centre">
+              <label for="username">Username:</label>
+              <input type="text" id="username" name="username">
+              <button type="submit" onclik="lancerJeu()">Continue</button>
+    </form>
+
+    <section id="instructions"  class="menu_du_centre">
+        <h2>Comment jouer?</h2>
+        <p>FR: Devine la forme cacher former par les points du niveau et relie les points dans une séquence et un ordre correct pour la dessiner <br><br>ESP: Adivina la forma oculta formada por los puntos del nivel y conecta los puntos en una secuencia correcta y ordena dibujarlo.<br><br>ANG: Guess the hidden shape formed by the dots in the level and connsect the dots in the correct sequence and order to draw it<br><br>Bonne chance!</p>
+        <button onclick="cacherInstruction()">Retour à l'accueil</button>
+    </section>
+
+    <section id="boite-jeu" >
+        <canvas id="espace-dessin" width="800" height="800"></canvas>
+        <section class="boutton-niveau">
+            <button onclick="recommencerNiveau()" class="boutton-jeu">Recommencer</button>
+            <button id="accueil" onclick="allerAccueil()" class="boutton-jeu">Page d'accueil</button>
+        </section>
+    </section>
+
+    <section id="niveau-suivant"  class="menu_du_centre">
+        <h2>Bien jouer!</h2>
+        <button onclick="niveauSuivant()" class="boutton-jeu">Prochian niveau</button>
+    </section>
+
+    <section id="felicitaion"  class="menu_du_centre">
+        <h2>Félicitation ! Vous avez fini tous les niveaux</h2>
+    </section>
+
+    <script src="Connect_The_Dots.js"></script>
+    <script type="module" src="./firebaseApp.js"></script>
+    <script type="module" src="./firebase_main.js"></script>
+</body>
+</html>
